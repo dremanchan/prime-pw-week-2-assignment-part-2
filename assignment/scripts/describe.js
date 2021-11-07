@@ -169,14 +169,15 @@ if (temp > 39 || time >= 4) {
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge
 // -- it is, so we console.log 'enter'.
-// Fix - the first conditional should be (age < minAge) instead because no entry should be granted to under 21 and 21 year olds are allowed to enter
-// Conditional would make more sense if it read
-//if(age < minAge) {
-//  console.log ('no entry');
-//} else if (age => minAge){
-//  console.log ('enter');
-//}
-//The second line would allow 21 year olds and over to enter
+/* Fix - the first conditional should be (age < minAge) instead because no entry should be granted to under 21 and 21 year olds are allowed to enter
+Conditional would make more sense if it read
+if(age < minAge) {
+  console.log ('no entry');
+} else if (age => minAge){
+  console.log ('enter');
+}
+/The second line would allow 21 year olds and over to enter
+*/
 /*
 let age = 21;
 const minAge = 21;
