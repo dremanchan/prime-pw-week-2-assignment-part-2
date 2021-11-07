@@ -139,7 +139,8 @@ if (number >= 2) {
 //4. We start with three variables -- colorOne is set to 'blue' and
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true
 // -- it is, so we set colorOne and colorTwo to 'purple'
-
+// FIX - colorOne variable needs to be set to 'red' and colorTwo needs to be set to 'blue'
+//colorTwo = 'purple needs to be added to the conditional statement to make the return true
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
@@ -149,13 +150,13 @@ if (mix === true) {
   colorOne = 'purple';
 }
 */
-// FIX - colorOne variable needs to be set to 'red' and colorTwo needs to be set to 'blue'
-//colorTwo = 'purple needs to be added to the conditional statement to make the return true
+
 
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
 // We check if temp is higher than 39 and if time is greater or equal to  4
 // -- they are so we console.log 'throw away the food!'
-
+// FIX - const should be set to var instead because the variable time in the conditional maybe a different value and making it a constant would mean it can't be a value other than 4.
+// || symbol should be changed to && because || makes it an or statement
 /*
 let temp = 40;
 const time = 4;
@@ -164,13 +165,18 @@ if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
 */
-// FIX - const should be set to var instead because the variable time in the conditional maybe a different value and making it a constant would mean it can't be a value other than 4.
-// || symbol should be changed to && because || makes it an or statement
 
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge
 // -- it is, so we console.log 'enter'.
-
+// Fix - the first conditional should be (age < minAge) instead because no entry should be granted to under 21 and 21 year olds are allowed to enter
+// Conditional would make more sense if it read
+//if(age < minAge) {
+//  console.log ('no entry');
+//} else if (age => minAge){
+//  console.log ('enter');
+//}
+//The second line would allow 21 year olds and over to enter
 /*
 let age = 21;
 const minAge = 21;
@@ -181,11 +187,3 @@ if(minAge <= age) {
   console.log('enter');
 }
 */
-// Fix - the first conditional should be (age < minAge) instead because no entry should be granted to under 21 and 21 year olds are allowed to enter
-// Conditional would make more sense if it read
-if(age < minAge) {
-  console.log ('no entry');
-} else if (age => minAge){
-  console.log ('enter');
-}
-//The second line would allow 21 year olds and over to enter
